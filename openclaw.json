@@ -81,7 +81,7 @@
         "store": {
           "vector": {
             "enabled": true,
-            "extensionPath": "~/workspace/openclaw-home/state/sqlite/vec0.so"
+            "extensionPath": "${OPENCLAW_STATE_DIR}/sqlite/vec0.so"
           }
         }
       },
@@ -231,7 +231,7 @@
       "dingtalk": {
         "source": "npm",
         "spec": "@openclaw-china/dingtalk",
-        "installPath": "/home/liuyuan/workspace/openclaw-home/state/extensions/dingtalk",
+        "installPath": "${OPENCLAW_STATE_DIR}/extensions/dingtalk",
         "version": "2026.3.9",
         "resolvedName": "@openclaw-china/dingtalk",
         "resolvedVersion": "2026.3.9",
