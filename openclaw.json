@@ -81,7 +81,7 @@
         "store": {
           "vector": {
             "enabled": true,
-            "extensionPath": "${OPENCLAW_STATE_DIR}/sqlite/vec0.so"
+            "extensionPath": "${OPENCLAW_SQLITE_VEC_LIB}"
           }
         }
       },
