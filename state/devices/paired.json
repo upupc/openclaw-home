@@ -1,0 +1,32 @@
+{
+  "2b16fe90498e0baebc003f0009aa3718dd5f47abb13b4cfc79edb3a5296c514f": {
+    "deviceId": "2b16fe90498e0baebc003f0009aa3718dd5f47abb13b4cfc79edb3a5296c514f",
+    "publicKey": "USUD_avdaIPuzpUcVfT0y0rI7HrX3XAE0UYci-IfGgM",
+    "displayName": "openclaw-tui",
+    "platform": "linux",
+    "clientId": "gateway-client",
+    "clientMode": "ui",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin"
+    ],
+    "approvedScopes": [
+      "operator.admin"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "G-gqSxYROoRtNmhg4G5X3JmH5S9srBF7dbDVTvtZW00",
+        "role": "operator",
+        "scopes": [
+          "operator.admin"
+        ],
+        "createdAtMs": 1773068710118
+      }
+    },
+    "createdAtMs": 1773068710118,
+    "approvedAtMs": 1773068710118
+  }
+}

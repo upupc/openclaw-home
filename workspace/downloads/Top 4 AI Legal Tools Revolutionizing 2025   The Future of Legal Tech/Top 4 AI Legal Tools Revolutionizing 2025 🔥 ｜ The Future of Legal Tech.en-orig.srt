@@ -1,0 +1,984 @@
+1
+00:00:00,280 --> 00:00:04,040
+let's talk about how AI is transforming
+
+2
+00:00:02,399 --> 00:00:05,040
+the legal industry if you've always
+
+3
+00:00:04,040 --> 00:00:07,359
+wondered what it would be like to have
+
+4
+00:00:05,040 --> 00:00:09,120
+an AI lawyer at your fingertips or a
+
+5
+00:00:07,359 --> 00:00:11,799
+tool that helps your legal team write
+
+6
+00:00:09,120 --> 00:00:14,280
+out documents assesses risk analyzes
+
+7
+00:00:11,799 --> 00:00:16,000
+Clauses and generates case summaries I
+
+8
+00:00:14,280 --> 00:00:18,080
+made this video for you legal is one of
+
+9
+00:00:16,000 --> 00:00:20,000
+the most powerful AI niches to come out
+
+10
+00:00:18,080 --> 00:00:22,400
+of this revolution many of these tools
+
+11
+00:00:20,000 --> 00:00:24,400
+are so powerful that big law firms are
+
+12
+00:00:22,400 --> 00:00:26,519
+actually restructuring their workflows
+
+13
+00:00:24,400 --> 00:00:28,679
+just to integrate them so chat gbt was
+
+14
+00:00:26,519 --> 00:00:30,800
+released in November of 2022 and just
+
+15
+00:00:28,679 --> 00:00:33,600
+look at this insane surve in searches
+
+16
+00:00:30,800 --> 00:00:35,120
+for AI lawyer soon after that now that
+
+17
+00:00:33,600 --> 00:00:37,040
+did decrease in the following year
+
+18
+00:00:35,120 --> 00:00:39,079
+mainly because AI startups really just
+
+19
+00:00:37,040 --> 00:00:40,480
+needed time to bootstrap and to solve
+
+20
+00:00:39,079 --> 00:00:42,079
+these problems but we're seeing
+
+21
+00:00:40,480 --> 00:00:44,160
+continued growth now and I predict that
+
+22
+00:00:42,079 --> 00:00:46,320
+more of these tools will grow and emerge
+
+23
+00:00:44,160 --> 00:00:47,960
+in 2025 so if you're looking for tools
+
+24
+00:00:46,320 --> 00:00:50,000
+to help you win your next case stick
+
+25
+00:00:47,960 --> 00:00:51,520
+around if you a friend or family member
+
+26
+00:00:50,000 --> 00:00:54,239
+is an attorney and they're looking for a
+
+27
+00:00:51,520 --> 00:00:56,440
+trending legal AI startup with 300%
+
+28
+00:00:54,239 --> 00:00:58,879
+growth in Just 2 years check this out
+
+29
+00:00:56,440 --> 00:01:00,359
+it's called Robin AI Robin is an AI
+
+30
+00:00:58,879 --> 00:01:02,559
+company that uses our artificial
+
+31
+00:01:00,359 --> 00:01:04,559
+intelligence to speed up the process of
+
+32
+00:01:02,559 --> 00:01:06,439
+reviewing and managing legal documents
+
+33
+00:01:04,559 --> 00:01:08,200
+their Tech makes it way easier to
+
+34
+00:01:06,439 --> 00:01:10,159
+understand these docs it also automates
+
+35
+00:01:08,200 --> 00:01:12,200
+a bunch of these really long and mundane
+
+36
+00:01:10,159 --> 00:01:14,360
+tasks so legal teams can save a lot of
+
+37
+00:01:12,200 --> 00:01:17,080
+time and money Robin AI has three key
+
+38
+00:01:14,360 --> 00:01:19,520
+modules for contract customization draft
+
+39
+00:01:17,080 --> 00:01:21,640
+review and query the draft module lets
+
+40
+00:01:19,520 --> 00:01:23,840
+you create contracts from pre-built
+
+41
+00:01:21,640 --> 00:01:25,840
+templates which already massively speeds
+
+42
+00:01:23,840 --> 00:01:28,439
+up the process with review you can edit
+
+43
+00:01:25,840 --> 00:01:31,159
+and negotiate contracts with AI assisted
+
+44
+00:01:28,439 --> 00:01:33,040
+live suggestions BAS based on customized
+
+45
+00:01:31,159 --> 00:01:34,520
+negotiating playbooks basically it just
+
+46
+00:01:33,040 --> 00:01:36,520
+makes sure that you don't miss anything
+
+47
+00:01:34,520 --> 00:01:38,600
+in the jumble the query module gives you
+
+48
+00:01:36,520 --> 00:01:40,720
+a searchable contract library that
+
+49
+00:01:38,600 --> 00:01:42,960
+allows you to quickly find and analyze
+
+50
+00:01:40,720 --> 00:01:44,719
+relevant Provisions across multiple
+
+51
+00:01:42,960 --> 00:01:46,439
+documents so whether you have your own
+
+52
+00:01:44,719 --> 00:01:48,600
+practice or you're part of a big firm
+
+53
+00:01:46,439 --> 00:01:50,640
+Robin AI has a plan for you for bigger
+
+54
+00:01:48,600 --> 00:01:52,520
+firms their platform can hire a large
+
+55
+00:01:50,640 --> 00:01:54,719
+volume of contracts plus they make
+
+56
+00:01:52,520 --> 00:01:56,240
+contract review 80% faster than
+
+57
+00:01:54,719 --> 00:01:57,479
+traditional methods so let's quickly
+
+58
+00:01:56,240 --> 00:01:58,920
+recap a few of the tasks that they're
+
+59
+00:01:57,479 --> 00:02:01,039
+going to take off your plate automated
+
+60
+00:01:58,920 --> 00:02:02,960
+Drafting and customizing ation using AI
+
+61
+00:02:01,039 --> 00:02:04,759
+customizable templates designed by legal
+
+62
+00:02:02,960 --> 00:02:06,520
+experts real-time suggestions and
+
+63
+00:02:04,759 --> 00:02:08,280
+recommendations during contract
+
+64
+00:02:06,520 --> 00:02:10,000
+negotiation AI power Clause
+
+65
+00:02:08,280 --> 00:02:11,720
+identification and risk assessment
+
+66
+00:02:10,000 --> 00:02:14,400
+collaborative contract editing and
+
+67
+00:02:11,720 --> 00:02:16,920
+version tracking and more reviews do
+
+68
+00:02:14,400 --> 00:02:19,400
+seem mixed but overall positive citing
+
+69
+00:02:16,920 --> 00:02:21,200
+document accuracy time-saving and risk
+
+70
+00:02:19,400 --> 00:02:22,519
+assessment that said it's still as
+
+71
+00:02:21,200 --> 00:02:24,040
+important to review everything because
+
+72
+00:02:22,519 --> 00:02:25,519
+the tech isn't quite there yet where we
+
+73
+00:02:24,040 --> 00:02:27,640
+have 100% confidence that it just
+
+74
+00:02:25,519 --> 00:02:29,200
+replaces all of these jobs they do have
+
+75
+00:02:27,640 --> 00:02:31,080
+a free version but right now their pro
+
+76
+00:02:29,200 --> 00:02:33,160
+version is at 100 per month they've
+
+77
+00:02:31,080 --> 00:02:34,760
+already stacked over $43 million in
+
+78
+00:02:33,160 --> 00:02:36,319
+series B funding and given their
+
+79
+00:02:34,760 --> 00:02:37,959
+relatively low search volume I would say
+
+80
+00:02:36,319 --> 00:02:40,640
+this one is definitely set to continue
+
+81
+00:02:37,959 --> 00:02:42,680
+scaling in 2025 so keep an eye out
+
+82
+00:02:40,640 --> 00:02:45,280
+here's a legal AI platform with over
+
+83
+00:02:42,680 --> 00:02:47,879
+1,000% Search growth in the past 2 years
+
+84
+00:02:45,280 --> 00:02:49,519
+alone let's talk about Harvey Ai No I'm
+
+85
+00:02:47,879 --> 00:02:51,239
+not talking about the guy from Suits
+
+86
+00:02:49,519 --> 00:02:53,400
+basically it's a generative AI platform
+
+87
+00:02:51,239 --> 00:02:56,000
+for big legal firms and it's able to
+
+88
+00:02:53,400 --> 00:02:58,040
+analyze contracts identify Clauses and
+
+89
+00:02:56,000 --> 00:02:59,879
+extract important terms and conditions
+
+90
+00:02:58,040 --> 00:03:02,239
+their overall goal is to help law firms
+
+91
+00:02:59,879 --> 00:03:05,480
+boost efficiency reduce risk and
+
+92
+00:03:02,239 --> 00:03:06,640
+allocate more time to higher value tasks
+
+93
+00:03:05,480 --> 00:03:08,599
+things like building client
+
+94
+00:03:06,640 --> 00:03:10,319
+relationships and giving strategic legal
+
+95
+00:03:08,599 --> 00:03:12,080
+advice in a nutshell it takes care of a
+
+96
+00:03:10,319 --> 00:03:13,680
+lot of the busy work so the lawyers can
+
+97
+00:03:12,080 --> 00:03:15,159
+actually move faster and with more
+
+98
+00:03:13,680 --> 00:03:17,080
+agility let's take a look at a few more
+
+99
+00:03:15,159 --> 00:03:19,840
+features here faster identification of
+
+100
+00:03:17,080 --> 00:03:21,319
+relevant Clauses statutes and precedents
+
+101
+00:03:19,840 --> 00:03:23,799
+automated contract summaries and
+
+102
+00:03:21,319 --> 00:03:25,680
+flagging potential issues multi language
+
+103
+00:03:23,799 --> 00:03:27,599
+support for analyzing Clauses across
+
+104
+00:03:25,680 --> 00:03:29,879
+different jurisdictions assistance in
+
+105
+00:03:27,599 --> 00:03:31,720
+drafting and revising legal documents
+
+106
+00:03:29,879 --> 00:03:33,680
+reducing that manual work this one's
+
+107
+00:03:31,720 --> 00:03:36,000
+pretty cool Predictive Analytics for
+
+108
+00:03:33,680 --> 00:03:37,799
+forecasting case outcomes and assessing
+
+109
+00:03:36,000 --> 00:03:39,879
+risk enhanced legal research
+
+110
+00:03:37,799 --> 00:03:41,840
+capabilities providing relevant case law
+
+111
+00:03:39,879 --> 00:03:43,959
+and statutes quickly it's even got a
+
+112
+00:03:41,840 --> 00:03:46,280
+secure project workspace for analyzing
+
+113
+00:03:43,959 --> 00:03:47,680
+protected documents while Robin AI works
+
+114
+00:03:46,280 --> 00:03:49,680
+for a variety of different clients
+
+115
+00:03:47,680 --> 00:03:51,599
+Harvey is mainly targeted at larger
+
+116
+00:03:49,680 --> 00:03:53,439
+firms so let's talk about reviews and
+
+117
+00:03:51,599 --> 00:03:55,480
+testimonials Allan and overy which is
+
+118
+00:03:53,439 --> 00:03:59,400
+now ano Sheeran One of the world's
+
+119
+00:03:55,480 --> 00:04:02,040
+largest firms had 3,500 lawyers test
+
+120
+00:03:59,400 --> 00:04:03,920
+Harvey AI by asking over 40,000
+
+121
+00:04:02,040 --> 00:04:05,720
+questions about day-to-day work the head
+
+122
+00:04:03,920 --> 00:04:07,599
+of their markets Innovation said I have
+
+123
+00:04:05,720 --> 00:04:09,000
+never seen anything like Harvey Harvey
+
+124
+00:04:07,599 --> 00:04:11,040
+can work in multiple languages and
+
+125
+00:04:09,000 --> 00:04:12,959
+across diverse practice areas delivering
+
+126
+00:04:11,040 --> 00:04:15,040
+unprecedented efficiency and
+
+127
+00:04:12,959 --> 00:04:17,239
+intelligence in our trial we saw some
+
+128
+00:04:15,040 --> 00:04:19,000
+amazing results after scrolling around
+
+129
+00:04:17,239 --> 00:04:20,799
+their site it looks like pricing is
+
+130
+00:04:19,000 --> 00:04:22,400
+customized to the firm but if you're a
+
+131
+00:04:20,799 --> 00:04:24,280
+big firm this definitely seems like the
+
+132
+00:04:22,400 --> 00:04:26,880
+best option around Harvey AI has stacked
+
+133
+00:04:24,280 --> 00:04:27,919
+over 200 million in series C funding and
+
+134
+00:04:26,880 --> 00:04:29,360
+considering their list of pretty
+
+135
+00:04:27,919 --> 00:04:31,680
+impressive clients I would say this one
+
+136
+00:04:29,360 --> 00:04:32,919
+is set to to continue growing in 2025
+
+137
+00:04:31,680 --> 00:04:34,880
+are you looking for an AI Legal
+
+138
+00:04:32,919 --> 00:04:37,680
+Assistant that can read analyze and
+
+139
+00:04:34,880 --> 00:04:40,080
+summarize legal documents at a postgrad
+
+140
+00:04:37,680 --> 00:04:41,520
+level if so let's talk about case text
+
+141
+00:04:40,080 --> 00:04:44,240
+case text was recently acquired by
+
+142
+00:04:41,520 --> 00:04:46,960
+Thompson Rutters for an insane $650
+
+143
+00:04:44,240 --> 00:04:48,800
+million co-council their gen AI Legal
+
+144
+00:04:46,960 --> 00:04:50,919
+Assistant is now the pretty face of the
+
+145
+00:04:48,800 --> 00:04:53,080
+company it leverages GPT to automate
+
+146
+00:04:50,919 --> 00:04:55,520
+legal tasks like Doc review legal
+
+147
+00:04:53,080 --> 00:04:57,280
+research deposition prep and contract
+
+148
+00:04:55,520 --> 00:04:59,199
+analysis it does this by combining
+
+149
+00:04:57,280 --> 00:05:01,000
+natural language processing and Boolean
+
+150
+00:04:59,199 --> 00:05:02,320
+search which is basically a mathematical
+
+151
+00:05:01,000 --> 00:05:04,800
+system that says variables can either
+
+152
+00:05:02,320 --> 00:05:06,880
+have two answers a one or a zero a true
+
+153
+00:05:04,800 --> 00:05:08,479
+or a false and this is really important
+
+154
+00:05:06,880 --> 00:05:10,120
+when it comes to Legal applications
+
+155
+00:05:08,479 --> 00:05:11,919
+because AI can sometimes default to the
+
+156
+00:05:10,120 --> 00:05:13,320
+easiest possible solution or even
+
+157
+00:05:11,919 --> 00:05:14,600
+hallucinate when you need something
+
+158
+00:05:13,320 --> 00:05:16,680
+really concrete with a bunch of
+
+159
+00:05:14,600 --> 00:05:18,720
+pre-existing rules in place for anybody
+
+160
+00:05:16,680 --> 00:05:20,160
+who uses AI regularly you know how
+
+161
+00:05:18,720 --> 00:05:22,080
+frustrating it can be to have something
+
+162
+00:05:20,160 --> 00:05:23,919
+hallucinate like for example I have
+
+163
+00:05:22,080 --> 00:05:26,639
+tried to get stats about specific
+
+164
+00:05:23,919 --> 00:05:28,560
+Industries using AI before and sometimes
+
+165
+00:05:26,639 --> 00:05:30,479
+it just makes the stats up and then when
+
+166
+00:05:28,560 --> 00:05:32,400
+I ask the AI hey provide the actual
+
+167
+00:05:30,479 --> 00:05:34,199
+Source it says oh I can't do that and I
+
+168
+00:05:32,400 --> 00:05:36,280
+say why it's because oh I just
+
+169
+00:05:34,199 --> 00:05:38,120
+fabricated that result so you can
+
+170
+00:05:36,280 --> 00:05:40,520
+imagine in a legal situation there's no
+
+171
+00:05:38,120 --> 00:05:42,520
+room for anything like this and that's
+
+172
+00:05:40,520 --> 00:05:43,880
+why this combination of natural language
+
+173
+00:05:42,520 --> 00:05:45,000
+processing and Boolean search is so
+
+174
+00:05:43,880 --> 00:05:46,600
+important let's say you've got a
+
+175
+00:05:45,000 --> 00:05:48,400
+deposition coming up just provide all
+
+176
+00:05:46,600 --> 00:05:50,199
+the info about your deponent and it'll
+
+177
+00:05:48,400 --> 00:05:52,080
+give you all these really great pointed
+
+178
+00:05:50,199 --> 00:05:54,120
+questions it also makes Doc review an
+
+179
+00:05:52,080 --> 00:05:55,759
+interactive and really simple process to
+
+180
+00:05:54,120 --> 00:05:57,199
+mitigate risk you can also upload all
+
+181
+00:05:55,759 --> 00:05:58,680
+your documents and it'll scan through
+
+182
+00:05:57,199 --> 00:06:00,560
+everything to try and find potential
+
+183
+00:05:58,680 --> 00:06:03,000
+conflicts they core assistant clocks in
+
+184
+00:06:00,560 --> 00:06:05,000
+at 225 per month with customized pricing
+
+185
+00:06:03,000 --> 00:06:06,800
+for larger firms now I went looking on
+
+186
+00:06:05,000 --> 00:06:09,240
+Reddit to see what people actually think
+
+187
+00:06:06,800 --> 00:06:10,400
+I dug into reviews and blog posts and it
+
+188
+00:06:09,240 --> 00:06:12,319
+looks like they do still have some
+
+189
+00:06:10,400 --> 00:06:14,120
+improvements to make but overall people
+
+190
+00:06:12,319 --> 00:06:16,400
+are happy with the price the citation
+
+191
+00:06:14,120 --> 00:06:17,599
+check and their Integrations now overall
+
+192
+00:06:16,400 --> 00:06:19,800
+this one has had strong and steady
+
+193
+00:06:17,599 --> 00:06:21,479
+growth over the past 5 years and I hope
+
+194
+00:06:19,800 --> 00:06:23,840
+that they can keep that momentum going
+
+195
+00:06:21,479 --> 00:06:25,520
+post acquisition and grow even further
+
+196
+00:06:23,840 --> 00:06:27,440
+this year so let's find out let's look
+
+197
+00:06:25,520 --> 00:06:30,160
+at a specialized AI Legal Assistant with
+
+198
+00:06:27,440 --> 00:06:32,800
+almost 9,000 Search growth in the past 2
+
+199
+00:06:30,160 --> 00:06:34,599
+years alone and that is Paxton AI legal
+
+200
+00:06:32,800 --> 00:06:36,199
+research which normally takes dozens if
+
+201
+00:06:34,599 --> 00:06:38,199
+not hundreds of hours can now be
+
+202
+00:06:36,199 --> 00:06:39,759
+shortened down to just a few minutes
+
+203
+00:06:38,199 --> 00:06:42,560
+sounds too good to be accurate right
+
+204
+00:06:39,759 --> 00:06:44,240
+well Paxton boasts a 94% accuracy rate
+
+205
+00:06:42,560 --> 00:06:46,319
+with its legal research tool I mean the
+
+206
+00:06:44,240 --> 00:06:48,479
+whole platform was created out of this
+
+207
+00:06:46,319 --> 00:06:50,720
+demand for faster more efficient
+
+208
+00:06:48,479 --> 00:06:52,759
+research and drafting it excels at
+
+209
+00:06:50,720 --> 00:06:54,440
+documents drafting with legal precedence
+
+210
+00:06:52,759 --> 00:06:57,120
+integrated comprehensive document
+
+211
+00:06:54,440 --> 00:06:58,680
+analysis AI assisted contextual research
+
+212
+00:06:57,120 --> 00:07:01,240
+and the overall ability to deepen and
+
+213
+00:06:58,680 --> 00:07:03,479
+expand on your existing work like Robin
+
+214
+00:07:01,240 --> 00:07:05,280
+Paxton is great for all firms big and
+
+215
+00:07:03,479 --> 00:07:06,919
+small for the smaller firms it's great
+
+216
+00:07:05,280 --> 00:07:09,039
+because it provides a lot of research
+
+217
+00:07:06,919 --> 00:07:10,319
+ability without all the paralal help
+
+218
+00:07:09,039 --> 00:07:12,199
+while digging into the reviews on this
+
+219
+00:07:10,319 --> 00:07:13,840
+one I found one user that said I had a
+
+220
+00:07:12,199 --> 00:07:15,639
+friend who needed a release and a waiver
+
+221
+00:07:13,840 --> 00:07:17,440
+for her dance studio with a large
+
+222
+00:07:15,639 --> 00:07:19,080
+customer base of children I researched
+
+223
+00:07:17,440 --> 00:07:21,080
+the applicable release laws for minors
+
+224
+00:07:19,080 --> 00:07:22,800
+in my jurisdiction and then asked Paxton
+
+225
+00:07:21,080 --> 00:07:25,560
+to draft a waiver that complied with
+
+226
+00:07:22,800 --> 00:07:27,120
+those laws I had it done and sent in 20
+
+227
+00:07:25,560 --> 00:07:29,039
+minutes now if you're an independent
+
+228
+00:07:27,120 --> 00:07:30,639
+lawyer or a student this one is great
+
+229
+00:07:29,039 --> 00:07:32,800
+because they do have a student option at
+
+230
+00:07:30,639 --> 00:07:34,639
+just 25 per month and if you're a small
+
+231
+00:07:32,800 --> 00:07:36,879
+firm their Pro Plan starts at a pretty
+
+232
+00:07:34,639 --> 00:07:39,240
+reasonable 159 per month they've already
+
+233
+00:07:36,879 --> 00:07:40,599
+stacked 6 mil in seed funding and given
+
+234
+00:07:39,240 --> 00:07:43,000
+their Search growth I would say this one
+
+235
+00:07:40,599 --> 00:07:44,680
+is definitely set to continue scaling so
+
+236
+00:07:43,000 --> 00:07:46,560
+check them out today that's all for
+
+237
+00:07:44,680 --> 00:07:48,479
+today I hope you enjoyed this deep dive
+
+238
+00:07:46,560 --> 00:07:50,280
+into legal AI tools we're are going to
+
+239
+00:07:48,479 --> 00:07:52,360
+keep monitoring this Niche to Bubble Up
+
+240
+00:07:50,280 --> 00:07:54,720
+any new startups and platforms that have
+
+241
+00:07:52,360 --> 00:07:56,599
+insane growth and applications for both
+
+242
+00:07:54,720 --> 00:07:58,199
+big and small firms if you have any
+
+243
+00:07:56,599 --> 00:08:00,120
+questions about these or you'd like us
+
+244
+00:07:58,199 --> 00:08:01,720
+to analyze a specific trend let's chat
+
+245
+00:08:00,120 --> 00:08:04,840
+in the comments below thank you and I'll
+
+246
+00:08:01,720 --> 00:08:04,840
+see you in our next video
+

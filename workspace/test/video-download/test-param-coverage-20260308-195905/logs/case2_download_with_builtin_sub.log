@@ -1,0 +1,34 @@
+[youtube] Extracting URL: https://www.youtube.com/watch?v=LIVeuxOQnw4
+==================================================
+开始下载视频...
+==================================================
+[youtube] LIVeuxOQnw4: Downloading webpage
+[youtube] LIVeuxOQnw4: Downloading android vr player API JSON
+[youtube] LIVeuxOQnw4: Downloading web safari player API JSON
+WARNING: [youtube] LIVeuxOQnw4: Some android_vr client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+[youtube] LIVeuxOQnw4: Downloading player 6c5cb4f4-tv
+[youtube] [jsc:deno] Solving JS challenges using deno
+WARNING: [youtube] [jsc] Remote components challenge solver script (deno) and NPM package (deno) were skipped. These may be required to solve JS challenges. You can enable these downloads with  --remote-components ejs:github  (recommended) or  --remote-components ejs:npm , respectively. For more information and alternatives, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS
+WARNING: [youtube] LIVeuxOQnw4: n challenge solving failed: Some formats may be missing. Ensure you have a supported JavaScript runtime and challenge solver script distribution installed. Review any warnings presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS
+[youtube] Extracting URL: https://www.youtube.com/watch?v=LIVeuxOQnw4
+[youtube] LIVeuxOQnw4: Downloading webpage
+[youtube] LIVeuxOQnw4: Downloading android vr player API JSON
+[youtube] LIVeuxOQnw4: Downloading web safari player API JSON
+WARNING: [youtube] LIVeuxOQnw4: Some android_vr client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+[youtube] LIVeuxOQnw4: Downloading player 6c5cb4f4-tv
+[youtube] [jsc:deno] Solving JS challenges using deno
+WARNING: [youtube] [jsc] Remote components challenge solver script (deno) and NPM package (deno) were skipped. These may be required to solve JS challenges. You can enable these downloads with  --remote-components ejs:github  (recommended) or  --remote-components ejs:npm , respectively. For more information and alternatives, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS
+WARNING: [youtube] LIVeuxOQnw4: n challenge solving failed: Some formats may be missing. Ensure you have a supported JavaScript runtime and challenge solver script distribution installed. Review any warnings presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS
+[info] LIVeuxOQnw4: Downloading 1 format(s): 18
+[info] There are no subtitles for the requested languages
+[download] Destination: /Users/liuyuan/workspace/openclaw-workspace/test/video-download/test-param-coverage-20260308-195905/case2/一個人管理 23 個 AI Agent 全自動運作OpenClaw 從零到一完整教學Multi-Agent 架構實戰/一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰.mp4
+[download]   0.0% of    3.09MiB at   29.58KiB/s ETA 01:47[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 1.00 KB / 3.09 MB (0.0%) | 速度: 0.03 MB/s[download]   0.1% of    3.09MiB at   86.97KiB/s ETA 00:36[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 3.00 KB / 3.09 MB (0.1%) | 速度: 0.08 MB/s[download]   0.2% of    3.09MiB at  200.82KiB/s ETA 00:15[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 7.00 KB / 3.09 MB (0.2%) | 速度: 0.20 MB/s[download]   0.5% of    3.09MiB at  426.49KiB/s ETA 00:07[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 15.00 KB / 3.09 MB (0.5%) | 速度: 0.42 MB/s[download]   1.0% of    3.09MiB at  155.52KiB/s ETA 00:20[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 31.00 KB / 3.09 MB (1.0%) | 速度: 0.15 MB/s[download]   2.0% of    3.09MiB at  183.77KiB/s ETA 00:16[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 63.00 KB / 3.09 MB (2.0%) | 速度: 0.18 MB/s[download]   4.0% of    3.09MiB at  256.78KiB/s ETA 00:11[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 127.00 KB / 3.09 MB (4.0%) | 速度: 0.25 MB/s[download]   8.1% of    3.09MiB at  395.20KiB/s ETA 00:07[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 255.00 KB / 3.09 MB (8.1%) | 速度: 0.39 MB/s[download]  16.1% of    3.09MiB at  633.75KiB/s ETA 00:04[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 511.00 KB / 3.09 MB (16.1%) | 速度: 0.62 MB/s[download]  32.3% of    3.09MiB at  978.77KiB/s ETA 00:02[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 1023.00 KB / 3.09 MB (32.3%) | 速度: 0.96 MB/s[download]  64.7% of    3.09MiB at    1.74MiB/s ETA 00:00[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 2.00 MB / 3.09 MB (64.7%) | 速度: 1.74 MB/s[download] 100.0% of    3.09MiB at    2.52MiB/s ETA 00:00[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 3.09 MB / 3.09 MB (100.0%) | 速度: 2.52 MB/s[download] 100% of    3.09MiB in 00:00:02 at 1.53MiB/s   
+
+[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 下载完成! 文件大小: 3.09 MB
+[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 已添加到转录队列
+
+==================================================
+视频下载完成 (跳过转录)
+==================================================
+成功下载 1 个视频 (跳过转录)
+[]

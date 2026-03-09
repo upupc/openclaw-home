@@ -1,0 +1,37 @@
+market: US
+max_drawdown: 0.30
+report:
+  top_n: 20
+  out_dir: "~/workspace/openclaw-data/us10x-pipeline/reports"
+  formats: ["md", "json"]
+
+universe:
+  # sp500 | nasdaq100 | custom
+  kind: "nasdaq100"
+  tickers_path: "~/workspace/openclaw-data/us10x-pipeline/universe/tickers.txt"
+
+filters:
+  min_avg_dollar_volume_20d: 2000000   # $2M/day
+  min_price: 2.0
+  # Risk hard constraint (C): drop names whose 12m max drawdown exceeds this.
+  max_mdd_12m: 0.30
+
+fundamentals:
+  # Basic quality/growth guardrails (A). Tune later.
+  min_market_cap: 2000000000   # $2B
+  min_gross_margin: 0.25
+  min_revenue_growth_yoy: 0.05
+
+scoring:
+  weights:
+    momentum_3m: 0.22
+    momentum_12m: 0.18
+    volatility_penalty: 0.12
+    drawdown_penalty: 0.18
+    fundamentals_score: 0.20
+    theme_score: 0.10
+
+data_provider:
+  # provider: "stooq" (free) | "finnhub" | "polygon" | ...
+  provider: "stooq"
+  api_key_env: ""  # if needed
