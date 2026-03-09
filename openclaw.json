@@ -67,7 +67,7 @@
           "alias": "qwen3.5-plus"
         }
       },
-      "workspace": "~/workspace/openclaw-home/workspace",
+      "workspace": "${OPENCLAW_WORKSPACE_DIR}",
       "memorySearch": {
         "sources": [
           "memory",
