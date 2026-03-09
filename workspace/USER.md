@@ -26,8 +26,8 @@ _Learn about the person you're helping. Update this as you go._
 
 ## Notes
 
-- 2026-03-04：用户要求所有下载文件和工具/技能产物默认保存到 `~/workspace/openclaw-data`。
-- 2026-03-04：当用户说“执行 python3”时，默认使用 `/Users/liuyuan/miniforge3/bin/python3`。
+- 2026-03-04：用户要求所有下载文件和工具/技能产物默认保存到 `${OPENCLAW_DATA_DIR}`。
+- 2026-03-04：当用户说“执行 python3”时，默认使用 `~/miniforge3/bin/python3`。
 
 ## Context
 

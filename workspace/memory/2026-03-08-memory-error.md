@@ -31,8 +31,8 @@ assistant: 我这边去“检查上次任务是否完成”的时候，遇到两
 1) **memory_search 当前不可用**（嵌入/提供方错误），所以没法直接从长期记忆里把“上次任务路径/产物位置”检索出来。（我已经尝试过了，但工具报错不可用。）
 
 2) 我在磁盘里按你上次 HEARTBEAT 里提到的路径找了：  
-- `~/workspace/openclaw-data` 目前**只有** `context-engineering/` 这一套产物  
-- 没有找到你之前提到的 `~/workspace/openclaw-data/AI_Inside_Research`（目录不存在），也没搜到 `youtube_links.txt`  
+- `${OPENCLAW_DATA_DIR}` 目前**只有** `context-engineering/` 这一套产物  
+- 没有找到你之前提到的 `${OPENCLAW_DATA_DIR}/AI_Inside_Research`（目录不存在），也没搜到 `youtube_links.txt`  
 - 全盘搜 `.srt/.vtt` 字幕文件时，也只看到 `context-engineering` 相关的字幕
 
 也就是说：**我现在没法确认“上次那个 AI企业内部提效调研（字幕提取那一步）”到底完成到哪、产物在哪，更没法续跑**——因为关键输入（项目目录 / youtube_links / 已抓字幕落盘目录）在当前工作区里找不到。
@@ -42,8 +42,8 @@ assistant: 我这边去“检查上次任务是否完成”的时候，遇到两
 ## 你给我 1 个信息，我就能继续把没完成的部分跑完
 请你回复一句：**上次任务的项目文件夹在哪里**（给一个路径就行）。常见的可能是下面之一，你看哪个对：
 
-- `~/workspace/openclaw-data/AI_Inside_Research`（但我这边没找到）
-- `~/workspace/openclaw-data/AI_Inside_Research_*`
+- `${OPENCLAW_DATA_DIR}/AI_Inside_Research`（但我这边没找到）
+- `${OPENCLAW_DATA_DIR}/AI_Inside_Research_*`
 - `~/workspace/openclaw-workspace/...`
 - 或者你当时改成了别的目录名
 

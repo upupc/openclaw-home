@@ -72,5 +72,5 @@ user: Conversation info (untrusted metadata):
 }
 ```
 
-记录一下，让你下载的文件或者使用工具技能产生的文件都必须保存到 ~/workspace/openclaw-data 下
-assistant: [[reply_to_current]] 记好了，已记录并生效：以后我下载的文件、以及工具/技能产生的文件，默认都保存到 `~/workspace/openclaw-data`。除非你明确指定其他路径。
+记录一下，让你下载的文件或者使用工具技能产生的文件都必须保存到 ${OPENCLAW_DATA_DIR} 下
+assistant: [[reply_to_current]] 记好了，已记录并生效：以后我下载的文件、以及工具/技能产生的文件，默认都保存到 `${OPENCLAW_DATA_DIR}`。除非你明确指定其他路径。

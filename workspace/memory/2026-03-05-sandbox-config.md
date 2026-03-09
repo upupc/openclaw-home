@@ -186,7 +186,7 @@ assistant: [[reply_to_current]]Hey 👋 在的～需要我继续帮你把 OpenCl
 user: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.
 Current time: Thursday, March 5th, 2026 — 17:59 (Asia/Shanghai)
 assistant: [[reply_to_current]]进度提醒：`HEARTBEAT.md` 当前状态已过期，需要更新。  
-我刚检查到 `~/workspace/openclaw-data/AI_Inside_Research` 实际进展是：
+我刚检查到 `${OPENCLAW_DATA_DIR}/AI_Inside_Research` 实际进展是：
 
 - 第4步 Tavily：12/12 课题已完成  
 - 第5步 Aisa-search：12/12 已完成  

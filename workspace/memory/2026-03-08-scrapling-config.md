@@ -106,7 +106,7 @@ assistant: [[reply_to_current]] 配好了 ✅
 
 ### 已完成
 - 创建独立 venv：
-  - `/Users/liuyuan/workspace/openclaw-data/scrapling-official/venv`
+  - `${OPENCLAW_DATA_DIR}/scrapling-official/venv`
 - 安装：
   - `scrapling[all]>=0.4.1`
 - 跑过：
@@ -114,13 +114,13 @@ assistant: [[reply_to_current]] 配好了 ✅
 
 ### 以后优先用这两个路径
 - `scrapling`：
-  - `/Users/liuyuan/workspace/openclaw-data/scrapling-official/venv/bin/scrapling`
+  - `${OPENCLAW_DATA_DIR}/scrapling-official/venv/bin/scrapling`
 - `python`：
-  - `/Users/liuyuan/workspace/openclaw-data/scrapling-official/venv/bin/python`
+  - `${OPENCLAW_DATA_DIR}/scrapling-official/venv/bin/python`
 
 ### 最短可用示例
 ```bash
-/Users/liuyuan/workspace/openclaw-data/scrapling-official/venv/bin/scrapling extract get "https://example.com" /Users/liuyuan/workspace/openclaw-data/scrapling-official/example.md
+${OPENCLAW_DATA_DIR}/scrapling-official/venv/bin/scrapling extract get "https://example.com" ${OPENCLAW_DATA_DIR}/scrapling-official/example.md
 ```
 
 我也顺手把这个路径记进 `TOOLS.md` 了。  

@@ -41,11 +41,11 @@ Add whatever helps you do your job. This is your cheat sheet.
 
 ### Media send staging
 
-- When sending media from `~/workspace/openclaw-data`, first copy it into `~/workspace/openclaw-workspace/tmp/` and send from there.
+- When sending media from `${OPENCLAW_DATA_DIR}`, first copy it into `~/workspace/openclaw-workspace/tmp/` and send from there.
 - Preferred staging dir: `/Users/liuyuan/workspace/openclaw-workspace/tmp/`
 
 ### Scrapling
 
-- Dedicated venv: `/Users/liuyuan/workspace/openclaw-data/scrapling-official/venv`
-- Preferred `scrapling` binary: `/Users/liuyuan/workspace/openclaw-data/scrapling-official/venv/bin/scrapling`
-- Preferred Python: `/Users/liuyuan/workspace/openclaw-data/scrapling-official/venv/bin/python`
+- Dedicated venv: `${OPENCLAW_DATA_DIR}/scrapling-official/venv`
+- Preferred `scrapling` binary: `${OPENCLAW_DATA_DIR}/scrapling-official/venv/bin/scrapling`
+- Preferred Python: `${OPENCLAW_DATA_DIR}/scrapling-official/venv/bin/python`

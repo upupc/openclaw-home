@@ -16,10 +16,10 @@ user: Sender (untrusted metadata):
 }
 ```
 
-[Thu 2026-03-05 19:37 GMT+8] 使用 humanizer-zh 技能对 /Users/liuyuan/workspace/openclaw-data/架构团队转型.md 文档做优化
+[Thu 2026-03-05 19:37 GMT+8] 使用 humanizer-zh 技能对 ${OPENCLAW_DATA_DIR}/架构团队转型.md 文档做优化
 assistant: [[reply_to_current]] 已按 **humanizer-zh** 技能完成优化，文件已覆盖更新：
 
-`/Users/liuyuan/workspace/openclaw-data/架构团队转型.md`
+`${OPENCLAW_DATA_DIR}/架构团队转型.md`
 
 这次主要做了这些处理：
 - 去掉了明显的 AI 味表达（如“核心推动力”“关键时刻”“持续演变格局”等）

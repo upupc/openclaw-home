@@ -34,7 +34,7 @@ assistant: 现在要“用 codex 执行 tech_research”，还差最后一步：
 按你的偏好（不自作主张），我先确认一句：
 
 **我可以现在重启 Gateway 吗？**  
-- 影响：Telegram 连接会短暂掉线/重连（通常几十秒），之后我立刻用 Codex 跑 `tech_research`（主题：上下文工程）并把结果落盘到 `~/workspace/openclaw-data/tech-research-context-engineering/`。
+- 影响：Telegram 连接会短暂掉线/重连（通常几十秒），之后我立刻用 Codex 跑 `tech_research`（主题：上下文工程）并把结果落盘到 `${OPENCLAW_DATA_DIR}/tech-research-context-engineering/`。
 
 你回我 **“确认重启”** 我就执行重启并开始跑。  
 如果你不想重启，我也能不用 codex，直接在当前会话按 tech_research 流程跑（但就不是“codex 执行”了）。
@@ -63,7 +63,7 @@ assistant: 要用 **codex（ACP）** 跑 `tech_research`，我这边现在还差
 
 你确认一下：我现在可以 **重启 Gateway** 吗？  
 - 会导致 Telegram 短暂断开/重连（一般几十秒）  
-- 重启后我立刻用 codex 执行 `tech_research（上下文工程）` 并把结果落盘到 `~/workspace/openclaw-data/tech-research-context-engineering/`
+- 重启后我立刻用 codex 执行 `tech_research（上下文工程）` 并把结果落盘到 `${OPENCLAW_DATA_DIR}/tech-research-context-engineering/`
 
 你回我：**确认重启** 我就开始。
 user: Conversation info (untrusted metadata):
@@ -110,7 +110,7 @@ assistant: 已经按你的要求用 **Codex（ACP）** 把 `tech_research`（主
 
 - Codex/ACP 子会话：`agent:codex:acp:47577141-36d1-47ee-86e4-3a1a7125cac2`
 - 任务已入队运行（runId：`fe1c82a0-0e57-469e-869b-971a323ed9c9`）
-- 产物会落盘到：`~/workspace/openclaw-data/tech-research-context-engineering/`  
+- 产物会落盘到：`${OPENCLAW_DATA_DIR}/tech-research-context-engineering/`  
   （包含拆题/关键词/搜索结果/抽取正文等目录）
 
 等它跑完我会把阶段性结果和落盘路径发你。
@@ -142,26 +142,26 @@ assistant: 没停，已经在推进了。当前进展如下（含落盘路径，
 
 ## 1) Tech_research（主题：上下文工程）已开始执行
 ### 1.1 已创建落盘目录结构
-`~/workspace/openclaw-data/tech-research-context-engineering/`
+`${OPENCLAW_DATA_DIR}/tech-research-context-engineering/`
 - `00-任务说明/task.md` 已写入
 
 ### 1.2 已用 Codex 生成“拆题/关键词/搜索语句”主体内容（阶段性产物）
 我用 acpx/codex 跑了一次 tech-research 的“拆题+关键词+搜索语句”输出，并保存为日志文件：
-- `~/workspace/openclaw-data/tech-research-context-engineering/06-notes/acpx_run_20260307-225432.txt`
+- `${OPENCLAW_DATA_DIR}/tech-research-context-engineering/06-notes/acpx_run_20260307-225432.txt`
 
 （里面已经开始按 tech-research 的结构输出，后续我会把关键部分再抽出来分别落到 `02-子题拆解/`、`03-关键词池/`、`07-reports/`。）
 
 ## 2) 搜索采集阶段：已跑 Tavily deep search 并落盘
 已完成 3 组 Tavily 深度搜索（共 30 条左右结果）并落盘到：
-- `~/workspace/openclaw-data/tech-research-context-engineering/04-search-results/tavily_deep_20260307-225624.md`
+- `${OPENCLAW_DATA_DIR}/tech-research-context-engineering/04-search-results/tavily_deep_20260307-225624.md`
 
 里面包含 Anthropic 的 Effective Context Engineering、微软 Azure SRE agent 的 context engineering 复盘等链接。
 
 ## 3) 下一步（还没做完）
 - 从上述搜索结果里挑 **10 条高价值链接**，用 `tavily-search/scripts/extract.mjs` 抽正文，保存到：
-  - `~/workspace/openclaw-data/tech-research-context-engineering/05-source-content/`
+  - `${OPENCLAW_DATA_DIR}/tech-research-context-engineering/05-source-content/`
 - 然后把“拆题/关键词/搜索语句/素材索引”整理成一份阶段性研究报告，写到：
-  - `~/workspace/openclaw-data/tech-research-context-engineering/07-reports/`
+  - `${OPENCLAW_DATA_DIR}/tech-research-context-engineering/07-reports/`
 
 如果你希望我优先抽取哪一类来源（Anthropic / Microsoft / 学术论文 / 工程博客），你告诉我优先级，我就按那个先抽。
 user: Conversation info (untrusted metadata):
@@ -223,11 +223,11 @@ assistant: 收到，你要的优先级是：**工程博客 + Anthropic / Microso
 ## 已完成的采集（落盘）
 ### 1) Tavily deep search（工程博客/官方文章/安全）
 已落盘：
-- `~/workspace/openclaw-data/tech-research-context-engineering/04-search-results/tavily_deep_20260307-225624.md`
+- `${OPENCLAW_DATA_DIR}/tech-research-context-engineering/04-search-results/tavily_deep_20260307-225624.md`
 
 ### 2) 抽取正文（extract）10 条高价值链接
 已用 `tavily-search/scripts/extract.mjs` 把正文抽出来并保存到：
-- `~/workspace/openclaw-data/tech-research-context-engineering/05-source-content/`
+- `${OPENCLAW_DATA_DIR}/tech-research-context-engineering/05-source-content/`
 
 具体文件（10 个）：
 - `www-anthropic-com-engineering-effective-context-engineering-for-ai-agents.md`（Anthropic）

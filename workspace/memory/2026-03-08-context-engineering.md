@@ -31,7 +31,7 @@ assistant: 我先复用你前两天已经整理过的“上下文工程”资料
 assistant: 我直接给你产文，不跟你兜圈子。先落一版**第三人称博客风格、围绕“上下文工程最佳实践”的长文**到数据目录，后面如果你要我再继续扩成更偏“教程版 / 投资视角 / OpenClaw落地版”，我可以接着迭代。
 assistant: [[reply_to_current]] 已写好一版，第三人称博客风格，已落盘到：
 
-`/Users/liuyuan/workspace/openclaw-data/context-engineering/context-engineering-best-practices-third-person-20260308.md`
+`${OPENCLAW_DATA_DIR}/context-engineering/context-engineering-best-practices-third-person-20260308.md`
 
 这版已经是长文结构，核心围绕**上下文工程的优秀实践**，重点讲了：
 - 为什么它比提示词工程更关键
@@ -68,7 +68,7 @@ Sender (untrusted metadata):
 assistant: 那就走**更有传播性的公众号/博客爆款风格**。我直接给你改一版：标题更抓人、开头更有钩子、段落更顺、可读性更强，但内容骨架还保留工程深度。
 assistant: [[reply_to_current]] 已改成更适合传播的公众号/博客风格，落盘在：
 
-`/Users/liuyuan/workspace/openclaw-data/context-engineering/context-engineering-best-practices-wechat-style-20260308.md`
+`${OPENCLAW_DATA_DIR}/context-engineering/context-engineering-best-practices-wechat-style-20260308.md`
 
 这一版相比上一版，主要做了这些调整：
 - 标题更抓人
@@ -126,7 +126,7 @@ Sender (untrusted metadata):
 assistant: 好，我给你做成**更正式、可发表的深度长文版**，并另存为新文件，不覆盖现在这版。
 assistant: [[reply_to_current]] 已执行选项 2，并保存到新文件：
 
-`/Users/liuyuan/workspace/openclaw-data/context-engineering/context-engineering-best-practices-formal-20260308.md`
+`${OPENCLAW_DATA_DIR}/context-engineering/context-engineering-best-practices-formal-20260308.md`
 
 这版比公众号风格那版更偏：
 - 正式发表

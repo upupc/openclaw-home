@@ -28,7 +28,7 @@ Add retry with exponential backoff + resume from checkpoint (skip completed topi
 
 ### Metadata
 - Reproducible: unknown
-- Related Files: /Users/liuyuan/workspace/openclaw-data/ai_research/run_research_pipeline.py
+- Related Files: ${OPENCLAW_DATA_DIR}/ai_research/run_research_pipeline.py
 
 ---
 
@@ -48,7 +48,7 @@ SyntaxError: unterminated string literal (detected at line 15)
 ```
 
 ### Context
-- Command: `/Users/liuyuan/miniforge3/bin/python3 /Users/liuyuan/workspace/openclaw-data/ai_research/resume_collect.py`
+- Command: `/Users/liuyuan/miniforge3/bin/python3 ${OPENCLAW_DATA_DIR}/ai_research/resume_collect.py`
 - Root cause: malformed key `'yt_queries'`.
 
 ### Suggested Fix
@@ -56,7 +56,7 @@ Correct quote typo; rerun script.
 
 ### Metadata
 - Reproducible: yes
-- Related Files: /Users/liuyuan/workspace/openclaw-data/ai_research/resume_collect.py
+- Related Files: ${OPENCLAW_DATA_DIR}/ai_research/resume_collect.py
 
 ### Resolution
 - **Resolved**: 2026-03-04T15:49:00+08:00
@@ -77,13 +77,13 @@ Research pipeline failed immediately because Python dependency `requests` was mi
 ### Error
 ```
 Traceback (most recent call last):
-  File "/Users/liuyuan/workspace/openclaw-data/ai_research/run_research_pipeline.py", line 4, in <module>
+  File "${OPENCLAW_DATA_DIR}/ai_research/run_research_pipeline.py", line 4, in <module>
     import requests
 ModuleNotFoundError: No module named 'requests'
 ```
 
 ### Context
-- Command: `python3 /Users/liuyuan/workspace/openclaw-data/ai_research/run_research_pipeline.py`
+- Command: `python3 ${OPENCLAW_DATA_DIR}/ai_research/run_research_pipeline.py`
 - Runtime default `python3` environment did not include `requests`.
 - User confirmed to continue execution.
 
@@ -92,6 +92,6 @@ Use `/Users/liuyuan/miniforge3/bin/python3` and/or install dependency in active 
 
 ### Metadata
 - Reproducible: yes
-- Related Files: /Users/liuyuan/workspace/openclaw-data/ai_research/run_research_pipeline.py
+- Related Files: ${OPENCLAW_DATA_DIR}/ai_research/run_research_pipeline.py
 
 ---

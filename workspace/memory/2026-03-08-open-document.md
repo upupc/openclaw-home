@@ -34,7 +34,7 @@ Sender (untrusted metadata):
 assistant: 我先把这篇抓下来，优先用轻量方式拿可读版内容；如果站点拦截，再升级到浏览器抓取。
 assistant: [[reply_to_current]] 抓到了，已保存到：
 
-`/Users/liuyuan/workspace/openclaw-data/scrapling/pragmaticengineer-how-claude-code-is-built-20260308.md`
+`${OPENCLAW_DATA_DIR}/scrapling/pragmaticengineer-how-claude-code-is-built-20260308.md`
 
 要不要我顺手帮你：
 1. 提炼这篇的核心观点  

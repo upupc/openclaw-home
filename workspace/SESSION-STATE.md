@@ -18,9 +18,9 @@
 - 2026-03-07: Current project: research how to use OpenClaw to make money
 
 ## Important Context
-- Workspace: /Users/liuyuan/workspace/openclaw-workspace
-- Default artifact root: ~/workspace/openclaw-data
-- Default python3: /Users/liuyuan/miniforge3/bin/python3
+- Workspace: ~/workspace/openclaw-home
+- Default artifact root: ${OPENCLAW_DATA_DIR}
+- Default python3: ~/miniforge3/bin/python3
 
 ## Next Actions
 - (empty)

@@ -1,69 +1,0 @@
-===== case1_urls_empty =====
-exit_code=0
-  URL列表为空
-  []
-
-===== case2_download_with_builtin_sub =====
-exit_code=0
-  [info] There are no subtitles for the requested languages
-  [download] Destination: /Users/liuyuan/workspace/openclaw-workspace/test/video-download/test-param-coverage-20260308-195905/case2/一個人管理 23 個 AI Agent 全自動運作OpenClaw 從零到一完整教學Multi-Agent 架構實戰/一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰.mp4
-  [download]   0.0% of    3.09MiB at   29.58KiB/s ETA 01:47[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 1.00 KB / 3.09 MB (0.0%) | 速度: 0.03 MB/s[download]   0.1% of    3.09MiB at   86.97KiB/s ETA 00:36[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 3.00 KB / 3.09 MB (0.1%) | 速度: 0.08 MB/s[download]   0.2% of    3.09MiB at  200.82KiB/s ETA 00:15[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 7.00 KB / 3.09 MB (0.2%) | 速度: 0.20 MB/s[download]   0.5% of    3.09MiB at  426.49KiB/s ETA 00:07[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 15.00 KB / 3.09 MB (0.5%) | 速度: 0.42 MB/s[download]   1.0% of    3.09MiB at  155.52KiB/s ETA 00:20[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 31.00 KB / 3.09 MB (1.0%) | 速度: 0.15 MB/s[download]   2.0% of    3.09MiB at  183.77KiB/s ETA 00:16[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 63.00 KB / 3.09 MB (2.0%) | 速度: 0.18 MB/s[download]   4.0% of    3.09MiB at  256.78KiB/s ETA 00:11[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 127.00 KB / 3.09 MB (4.0%) | 速度: 0.25 MB/s[download]   8.1% of    3.09MiB at  395.20KiB/s ETA 00:07[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 255.00 KB / 3.09 MB (8.1%) | 速度: 0.39 MB/s[download]  16.1% of    3.09MiB at  633.75KiB/s ETA 00:04[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 511.00 KB / 3.09 MB (16.1%) | 速度: 0.62 MB/s[download]  32.3% of    3.09MiB at  978.77KiB/s ETA 00:02[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 1023.00 KB / 3.09 MB (32.3%) | 速度: 0.96 MB/s[download]  64.7% of    3.09MiB at    1.74MiB/s ETA 00:00[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 2.00 MB / 3.09 MB (64.7%) | 速度: 1.74 MB/s[download] 100.0% of    3.09MiB at    2.52MiB/s ETA 00:00[一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 3.09 MB / 3.09 MB (100.0%) | 速度: 2.52 MB/s[download] 100% of    3.09MiB in 00:00:02 at 1.53MiB/s   
-  
-  [一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 下载完成! 文件大小: 3.09 MB
-  [一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 已添加到转录队列
-  
-  ==================================================
-  视频下载完成 (跳过转录)
-  ==================================================
-  成功下载 1 个视频 (跳过转录)
-  []
-
-===== case3_onlysubtitle =====
-exit_code=0
-  WARNING: [youtube] LIVeuxOQnw4: Some android_vr client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
-  [youtube] LIVeuxOQnw4: Downloading player 6c5cb4f4-tv
-  [youtube] [jsc:deno] Solving JS challenges using deno
-  WARNING: [youtube] [jsc] Remote components challenge solver script (deno) and NPM package (deno) were skipped. These may be required to solve JS challenges. You can enable these downloads with  --remote-components ejs:github  (recommended) or  --remote-components ejs:npm , respectively. For more information and alternatives, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS
-  WARNING: [youtube] LIVeuxOQnw4: n challenge solving failed: Some formats may be missing. Ensure you have a supported JavaScript runtime and challenge solver script distribution installed. Review any warnings presented before this message. For more details, refer to  https://github.com/yt-dlp/yt-dlp/wiki/EJS
-  [info] LIVeuxOQnw4: Downloading subtitles: zh-TW
-  [info] LIVeuxOQnw4: Downloading 1 format(s): 18
-  [info] Writing video subtitles to: /Users/liuyuan/workspace/openclaw-workspace/test/video-download/test-param-coverage-20260308-195905/case3/一個人管理 23 個 AI Agent 全自動運作OpenClaw 從零到一完整教學Multi-Agent 架構實戰/一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰.zh-TW.srt
-  [download] Destination: /Users/liuyuan/workspace/openclaw-workspace/test/video-download/test-param-coverage-20260308-195905/case3/一個人管理 23 個 AI Agent 全自動運作OpenClaw 從零到一完整教學Multi-Agent 架構實戰/一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰.zh-TW.srt
-  [download]    1.00KiB at  Unknown B/s (00:00:00)[download]    3.00KiB at    1.76MiB/s (00:00:00)[download]    3.52KiB at    1.65MiB/s (00:00:00)[download] 100% of    3.52KiB in 00:00:00 at 4.32KiB/s
-  仅字幕下载完成：成功 1/1
-  [{'url': 'https://www.youtube.com/watch?v=LIVeuxOQnw4', 'success': True, 'subtitle_path': '/Users/liuyuan/workspace/openclaw-workspace/test/video-download/test-param-coverage-20260308-195905/case3/一個人管理 23 個 AI Agent 全自動運作OpenClaw 從零到一完整教學Multi-Agent 架構實戰/一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰.zh-TW.srt', 'error': None}]
-
-===== case4_transcribe =====
-exit_code=0
-  视频下载完成，开始转录 1 个视频...
-  ==================================================
-  
-  [1/1] 正在提取音频: 一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰
-  [1/1] 正在转录: 一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰
-  Transcribing:   0%|          | 0/184.3664375 [00:00<?, ?seconds/s]Transcribing:   4%|▎         | 6.72/184.3664375 [00:01<00:28,  6.25seconds/s]Transcribing:  18%|█▊        | 34.0/184.3664375 [00:02<00:09, 15.55seconds/s]Transcribing:  35%|███▌      | 64.88/184.3664375 [00:03<00:06, 19.72seconds/s]Transcribing:  47%|████▋     | 86.72/184.3664375 [00:04<00:05, 18.78seconds/s]Transcribing:  60%|█████▉    | 110.0/184.3664375 [00:06<00:04, 17.24seconds/s]Transcribing:  76%|███████▌  | 139.84/184.3664375 [00:07<00:02, 18.66seconds/s]Transcribing:  90%|████████▉ | 165.52/184.3664375 [00:08<00:00, 20.25seconds/s]Transcribing: 100%|█████████▉| 183.84/184.3664375 [00:08<00:00, 20.67seconds/s]
-  
-  [1/1] 正在保存字幕文件...
-  [1/1] 字幕文件已保存
-  [1/1] 转录完成: 一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰
-  成功下载 1 个视频，完成 1 个转录
-  [{'title': '一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰', 'url': 'https://www.youtube.com/watch?v=LIVeuxOQnw4', 'transcript': '/Users/liuyuan/workspace/openclaw-workspace/test/video-download/test-param-coverage-20260308-195905/case4/一個人管理 23 個 AI Agent 全自動運作OpenClaw 從零到一完整教學Multi-Agent 架構實戰/一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰.txt', 'format': 'txt'}]
-
-===== case5_overwrite_skip =====
-exit_code=0
-  [download] /Users/liuyuan/workspace/openclaw-workspace/test/video-download/test-param-coverage-20260308-195905/case4/一個人管理 23 個 AI Agent 全自動運作OpenClaw 從零到一完整教學Multi-Agent 架構實戰/一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰.mp4 has already been downloaded
-  [download] 100% of    3.09MiB
-  
-  [一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 下载完成! 文件大小: 3.09 MB
-  [一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰] 已添加到转录队列
-  
-  [1/1] 检测到已存在字幕文件，跳过转录: 一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰
-  [1/1] 已存在字幕: 一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰.txt
-  
-  无需转录：所有视频均已存在字幕文件
-  成功下载 1 个视频，跳过 1 个转录（字幕已存在）
-  [{'title': '一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰', 'url': 'https://www.youtube.com/watch?v=LIVeuxOQnw4', 'transcript': '/Users/liuyuan/workspace/openclaw-workspace/test/video-download/test-param-coverage-20260308-195905/case4/一個人管理 23 個 AI Agent 全自動運作OpenClaw 從零到一完整教學Multi-Agent 架構實戰/一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰.txt', 'format': 'txt'}]
-
-===== artifacts =====
-  /Users/liuyuan/workspace/openclaw-workspace/test/video-download/test-param-coverage-20260308-195905/case3/一個人管理 23 個 AI Agent 全自動運作OpenClaw 從零到一完整教學Multi-Agent 架構實戰/一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰.zh-TW.srt
-  /Users/liuyuan/workspace/openclaw-workspace/test/video-download/test-param-coverage-20260308-195905/case4/一個人管理 23 個 AI Agent 全自動運作OpenClaw 從零到一完整教學Multi-Agent 架構實戰/一個人管理 23 個 AI Agent 全自動運作？OpenClaw 從零到一完整教學｜Multi-Agent 架構實戰.txt
-
