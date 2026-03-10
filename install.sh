@@ -5,6 +5,8 @@ set -euo pipefail
 OPENCLAW_HOME="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 ENV_FILE="${OPENCLAW_HOME}/.env"
 ENV_EXAMPLE_FILE="${OPENCLAW_HOME}/.env.example"
+OPENCLAW_CONFIG_FILE="${OPENCLAW_HOME}/openclaw.json"
+OPENCLAW_CONFIG_EXAMPLE_FILE="${OPENCLAW_HOME}/openclaw.json.example"
 
 log() {
   printf '[install] %s\n' "$*"
@@ -26,6 +28,7 @@ ensure_env_file() {
     log "检测到 .env 不存在，已创建空文件"
   fi
 
+  set_env_var "PATH" "~/miniforge3/bin:\$PATH"
   set_env_var "OPENCLAW_DATA_DIR" "${OPENCLAW_HOME}/data"
   set_env_var "OPENCLAW_WORKSPACE_DIR" "${OPENCLAW_HOME}/workspace"
   set_env_var "OPENCLAW_STATE_DIR" "${OPENCLAW_HOME}/state"
@@ -228,6 +231,16 @@ update_macos_launch_agent() {
   log "已更新 LaunchAgent 环境变量: ${plist_file}"
 }
 
+ensure_openclaw_config_file() {
+  if [[ -f "${OPENCLAW_CONFIG_FILE}" ]]; then
+    return
+  fi
+
+  [[ -f "${OPENCLAW_CONFIG_EXAMPLE_FILE}" ]] || fail "未找到配置模板文件: ${OPENCLAW_CONFIG_EXAMPLE_FILE}"
+  cp "${OPENCLAW_CONFIG_EXAMPLE_FILE}" "${OPENCLAW_CONFIG_FILE}"
+  log "检测到 openclaw.json 不存在，已基于 openclaw.json.example 创建"
+}
+
 main() {
   local os_name
 
@@ -239,6 +252,7 @@ main() {
   ensure_sqlite_vec_lib
   set_env_var "OPENCLAW_SQLITE_VEC_LIB" "${SQLITE_VEC_LIB}"
   log "已更新 OPENCLAW_SQLITE_VEC_LIB=${SQLITE_VEC_LIB}"
+  ensure_openclaw_config_file
 
   detect_user_env_file
   append_env_source_block
