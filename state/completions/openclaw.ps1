@@ -17,7 +17,7 @@ Register-ArgumentCompleter -Native -CommandName openclaw -ScriptBlock {
     
     # Root command
     if ($commandPath -eq "") {
-         $completions = @('completion','setup','onboard','configure','config','backup','doctor','dashboard','reset','uninstall','message','memory','agent','agents','status','health','sessions','browser','acp','gateway','daemon','logs','system','models','approvals','nodes','devices','node','sandbox','tui','cron','dns','docs','hooks','webhooks','qr','clawbot','china','pairing','plugins','channels','directory','security','secrets','skills','update', '-V,','--dev','--profile','--log-level','--no-color') 
+         $completions = @('completion','setup','onboard','configure','config','backup','doctor','dashboard','reset','uninstall','message','memory','agent','agents','status','health','sessions','browser','acp','gateway','daemon','logs','system','models','approvals','nodes','devices','node','sandbox','tui','cron','dns','docs','hooks','webhooks','qr','clawbot','pairing','plugins','channels','directory','security','secrets','skills','update', '-V,','--dev','--profile','--log-level','--no-color') 
          $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
             [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
          }
@@ -25,7 +25,7 @@ Register-ArgumentCompleter -Native -CommandName openclaw -ScriptBlock {
     
     
             if ($commandPath -eq 'openclaw') {
-                $completions = @('completion','setup','onboard','configure','config','backup','doctor','dashboard','reset','uninstall','message','memory','agent','agents','status','health','sessions','browser','acp','gateway','daemon','logs','system','models','approvals','nodes','devices','node','sandbox','tui','cron','dns','docs','hooks','webhooks','qr','clawbot','china','pairing','plugins','channels','directory','security','secrets','skills','update','-V','--dev','--profile','--log-level','--no-color')
+                $completions = @('completion','setup','onboard','configure','config','backup','doctor','dashboard','reset','uninstall','message','memory','agent','agents','status','health','sessions','browser','acp','gateway','daemon','logs','system','models','approvals','nodes','devices','node','sandbox','tui','cron','dns','docs','hooks','webhooks','qr','clawbot','pairing','plugins','channels','directory','security','secrets','skills','update','-V','--dev','--profile','--log-level','--no-color')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }
@@ -1818,13 +1818,6 @@ Register-ArgumentCompleter -Native -CommandName openclaw -ScriptBlock {
 
             if ($commandPath -eq 'openclaw clawbot qr') {
                 $completions = @('--remote','--url','--public-url','--token','--password','--setup-code-only','--no-ascii','--json')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'openclaw china') {
-                $completions = @('setup','about')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }

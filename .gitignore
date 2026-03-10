@@ -37,3 +37,8 @@ openclaw.json
 # Credentials / secrets
 .credentials/
 tmp
+
+state/devices
+state/identity
+state/agents/*/sessions
+state/logs

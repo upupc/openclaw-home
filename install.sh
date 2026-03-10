@@ -231,6 +231,28 @@ update_macos_launch_agent() {
   log "已更新 LaunchAgent 环境变量: ${plist_file}"
 }
 
+reload_service_by_os() {
+  local os_name="$1"
+
+  case "${os_name}" in
+    Darwin)
+      local plist_path
+      plist_path="${HOME}/Library/LaunchAgents/ai.openclaw.gateway.plist"
+
+      launchctl bootout "gui/$(id -u)" "${plist_path}" >/dev/null 2>&1 || log "LaunchAgent 当前未加载，跳过 bootout"
+      launchctl bootstrap "gui/$(id -u)" "${plist_path}"
+      log "已执行 launchctl bootout/bootstrap"
+      ;;
+    Linux)
+      systemctl --user daemon-reload
+      log "已执行 systemctl --user daemon-reload"
+      ;;
+    *)
+      fail "不支持的操作系统: ${os_name}"
+      ;;
+  esac
+}
+
 ensure_openclaw_config_file() {
   if [[ -f "${OPENCLAW_CONFIG_FILE}" ]]; then
     return
@@ -269,6 +291,7 @@ main() {
       ;;
   esac
 
+  reload_service_by_os "${os_name}"
   log "安装配置完成"
 }
 
