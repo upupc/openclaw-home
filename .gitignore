@@ -42,6 +42,7 @@ state/devices
 state/identity
 state/credentials
 state/telegram
+state/dingtalk
 state/agents/*/sessions
 state/logs
 state/update-check.json
