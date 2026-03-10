@@ -27,7 +27,7 @@ pnpm-debug.log*
 .env
 .env.*
 !.env.example
-!openclaw.json
+openclaw.json
 
 # Backup files
 *.bak
