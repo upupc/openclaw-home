@@ -1,12 +1,17 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.3.7",
-    "lastTouchedAt": "2026-03-09T15:12:11.949Z"
+    "lastTouchedVersion": "2026.3.8",
+    "lastTouchedAt": "2026-03-10T05:09:41.152Z"
+  },
+  "env": {
+    "shellEnv": {
+      "enabled": true
+    }
   },
   "wizard": {
-    "lastRunAt": "2026-03-09T13:54:30.810Z",
-    "lastRunVersion": "2026.3.7",
-    "lastRunCommand": "onboard",
+    "lastRunAt": "2026-03-10T02:12:01.450Z",
+    "lastRunVersion": "2026.3.8",
+    "lastRunCommand": "configure",
     "lastRunMode": "local"
   },
   "update": {
@@ -57,7 +62,12 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "bailian/qwen3.5-plus"
+        "primary": "bailian/qwen3.5-plus",
+        "fallbacks": [
+          "openai-codex/gpt-5.2",
+          "openai-codex/gpt-5.3-codex",
+          "openai-codex/gpt-5.4"
+        ]
       },
       "models": {
         "openai-codex/gpt-5.2": {},
@@ -188,7 +198,9 @@
       "clientId": "dingbexzpctzfnkj5opz",
       "clientSecret": "uFca6pG0QUqPlemi8YiefQOf-YVdrsbh461mvNFuz6woC9pUBOgxHAUAsu8pLfxx",
       "enableAICard": false,
-      "enabled": true
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "groupPolicy": "disabled"
     }
   },
   "gateway": {
@@ -202,6 +214,13 @@
     "tailscale": {
       "mode": "off",
       "resetOnExit": false
+    },
+    "http": {
+      "endpoints": {
+        "chatCompletions": {
+          "enabled": true
+        }
+      }
     },
     "nodes": {
       "denyCommands": [
@@ -238,8 +257,8 @@
         "resolvedSpec": "@openclaw-china/dingtalk@2026.3.9",
         "integrity": "sha512-NDQ3+7cIZWDF8UX3rO81aqXyonBkMC2iIgq3fwxIN52A8ZLXmA+nXzXX2DPQ0+3AMrdWMm1RULc/7K9Wpqewvg==",
         "shasum": "8c085397d85b65843a8c12468d0611a5589f0897",
-        "resolvedAt": "2026-03-09T15:11:07.220Z",
-        "installedAt": "2026-03-09T15:11:28.020Z"
+        "resolvedAt": "2026-03-10T04:57:19.572Z",
+        "installedAt": "2026-03-10T04:57:34.986Z"
       }
     }
   }

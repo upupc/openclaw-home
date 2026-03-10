@@ -2,16 +2,16 @@
   "2b16fe90498e0baebc003f0009aa3718dd5f47abb13b4cfc79edb3a5296c514f": {
     "deviceId": "2b16fe90498e0baebc003f0009aa3718dd5f47abb13b4cfc79edb3a5296c514f",
     "publicKey": "USUD_avdaIPuzpUcVfT0y0rI7HrX3XAE0UYci-IfGgM",
-    "displayName": "openclaw-tui",
     "platform": "linux",
-    "clientId": "gateway-client",
-    "clientMode": "ui",
+    "clientId": "openclaw-probe",
+    "clientMode": "probe",
     "role": "operator",
     "roles": [
       "operator"
     ],
     "scopes": [
-      "operator.admin"
+      "operator.admin",
+      "operator.read"
     ],
     "approvedScopes": [
       "operator.admin"
