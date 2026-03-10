@@ -42,3 +42,5 @@ state/devices
 state/identity
 state/agents/*/sessions
 state/logs
+state/update-check.json
+state/update-check.json.*
