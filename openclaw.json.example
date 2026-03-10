@@ -235,6 +235,7 @@
     }
   },
   "plugins": {
+    "allow": ["dingtalk","telegram","acpx"],
     "entries": {
       "telegram": {
         "enabled": true

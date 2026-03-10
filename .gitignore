@@ -40,6 +40,8 @@ tmp
 
 state/devices
 state/identity
+state/credentials
+state/telegram
 state/agents/*/sessions
 state/logs
 state/update-check.json
