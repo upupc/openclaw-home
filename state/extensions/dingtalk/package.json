@@ -1,6 +1,6 @@
 {
   "name": "@openclaw-china/dingtalk",
-  "version": "2026.3.9",
+  "version": "2026.3.12",
   "type": "module",
   "description": "Moltbot DingTalk channel plugin",
   "license": "MIT",
@@ -92,7 +92,7 @@
     "release:major": "npm run build && npm version major && npm publish"
   },
   "dependencies": {
-    "@openclaw-china/shared": "2026.3.9",
+    "@openclaw-china/shared": "2026.3.12",
     "dingtalk-stream": "^2.1.4"
   },
   "devDependencies": {

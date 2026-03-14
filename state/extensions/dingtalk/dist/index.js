@@ -4250,7 +4250,7 @@ var DingtalkAccountSchema = external_exports.object({
   /** 长任务提醒延迟（毫秒），0 表示关闭 */
   longTaskNoticeDelayMs: external_exports.number().int().min(0).optional().default(3e4),
   /** 是否启用 AI Card 流式响应 */
-  enableAICard: external_exports.boolean().optional().default(true),
+  enableAICard: external_exports.boolean().optional().default(false),
   /** Gateway auth token（Bearer） */
   gatewayToken: external_exports.string().optional(),
   /** Gateway auth password（替代 gatewayToken） */
@@ -6545,6 +6545,13 @@ function getChannelConfig(cfg, channelId) {
   const existing = channels[channelId];
   return isRecord(existing) ? existing : {};
 }
+function getGatewayAuthToken(cfg) {
+  if (!isRecord(cfg.gateway)) {
+    return void 0;
+  }
+  const auth = isRecord(cfg.gateway.auth) ? cfg.gateway.auth : void 0;
+  return toTrimmedString2(auth?.token);
+}
 function getPreferredAccountConfig(channelCfg) {
   const accounts = channelCfg.accounts;
   if (!isRecord(accounts)) {
@@ -6706,11 +6713,22 @@ async function configureDingtalk(prompter, cfg) {
     "\u542F\u7528 AI Card \u6D41\u5F0F\u56DE\u590D\uFF08\u63A8\u8350\u5173\u95ED\uFF0C\u4F7F\u7528\u975E\u6D41\u5F0F\uFF09",
     toBoolean(existing.enableAICard, false)
   );
-  return mergeChannelConfig(cfg, "dingtalk", {
+  const patch = {
     clientId,
     clientSecret,
     enableAICard
-  });
+  };
+  if (enableAICard) {
+    const gatewayToken = await prompter.askSecret({
+      label: "OpenClaw Gateway Token\uFF08\u6D41\u5F0F\u8F93\u51FA\u5FC5\u9700\uFF1B\u7559\u7A7A\u5219\u4F7F\u7528\u5168\u5C40 gateway.auth.token\uFF09",
+      existingValue: toTrimmedString2(existing.gatewayToken) ?? getGatewayAuthToken(cfg),
+      required: false
+    });
+    if (gatewayToken.trim()) {
+      patch.gatewayToken = gatewayToken;
+    }
+  }
+  return mergeChannelConfig(cfg, "dingtalk", patch);
 }
 async function configureFeishu(prompter, cfg) {
   section("\u914D\u7F6E Feishu\uFF08\u98DE\u4E66\uFF09");
@@ -8281,6 +8299,14 @@ function resolveGatewayRequestParams(runtime2, dingtalkCfg, logger) {
   }
   return { gatewayUrl, headers };
 }
+function formatStreamingInterruptMessage(err) {
+  const baseMessage = `\u26A0\uFE0F Response interrupted: ${String(err)}`;
+  if (String(err).includes("Gateway error")) {
+    return `${baseMessage}
+\u8BF7\u624B\u52A8\u8BBE\u7F6E channels.dingtalk.gatewayToken\uFF0C\u6216\u786E\u8BA4 OpenClaw \u5168\u5C40 gateway.auth.token \u914D\u7F6E\u6B63\u786E\u3002`;
+  }
+  return baseMessage;
+}
 async function* streamFromGateway(params) {
   const { runtime: runtime2, sessionKey, userContent, logger, dingtalkCfg, abortSignal } = params;
   const { gatewayUrl, headers } = resolveGatewayRequestParams(runtime2, dingtalkCfg, logger);
@@ -8494,13 +8520,13 @@ async function handleAICardStreaming(params) {
   } catch (err) {
     logger.error(`AI Card streaming failed: ${String(err)}`);
     try {
-      const errorMsg = `\u26A0\uFE0F Response interrupted: ${String(err)}`;
+      const errorMsg = formatStreamingInterruptMessage(err);
       await finishAICard(card, errorMsg, (msg) => logger.debug(msg));
     } catch (finishErr) {
       logger.error(`Failed to finish card with error: ${String(finishErr)}`);
     }
     try {
-      const fallbackText = accumulated.trim() ? accumulated : `\u26A0\uFE0F Response interrupted: ${String(err)}`;
+      const fallbackText = accumulated.trim() ? accumulated : formatStreamingInterruptMessage(err);
       const limit = dingtalkCfg.textChunkLimit ?? 4e3;
       for (let i = 0; i < fallbackText.length; i += limit) {
         const chunk = fallbackText.slice(i, i + limit);
@@ -9230,7 +9256,7 @@ function processDingtalkInbound(params) {
       accountId,
       log: (msg) => logger.info(msg.replace(/^\[dingtalk\]\s*/, "")),
       error: (msg) => logger.error(msg.replace(/^\[dingtalk\]\s*/, "")),
-      enableAICard: dingtalkCfg?.enableAICard ?? true
+      enableAICard: dingtalkCfg?.enableAICard ?? false
     }).catch((err) => {
       logger.error(`error handling message: ${String(err)}`);
     });
@@ -9892,7 +9918,7 @@ var dingtalkOnboardingAdapter = {
     }
     const enableAICard = await params.prompter.confirm({
       message: "\u662F\u5426\u542F\u7528 AI Card \u6D41\u5F0F\u54CD\u5E94\uFF1F\uFF08\u76F4\u63A5\u56DE\u8F66\u4F7F\u7528\u63A8\u8350\u503C\uFF09",
-      initialValue: true
+      initialValue: false
     });
     next = {
       ...next,
