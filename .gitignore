@@ -28,7 +28,7 @@ pnpm-debug.log*
 .env.*
 !.env.example
 openclaw.json
-
+openclaw.json.bak*
 # Backup files
 *.bak
 *.swp

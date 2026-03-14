@@ -1,1 +1,2 @@
 {"ts":1773501180112,"jobId":"0a09e94a-206c-4c84-8528-6c96d22b00b9","action":"finished","status":"ok","summary":"【代码质量评估进展汇报】请检查当前 code-quality 任务执行进度并向用户汇报。","deliveryStatus":"not-requested","runAtMs":1773501060013,"durationMs":120094,"nextRunAtMs":1773501240010}
+{"ts":1773501360077,"jobId":"0a09e94a-206c-4c84-8528-6c96d22b00b9","action":"finished","status":"ok","summary":"【代码质量评估进展汇报】请检查当前 code-quality 任务执行进度并向用户汇报。","deliveryStatus":"not-requested","runAtMs":1773501240014,"durationMs":120061,"nextRunAtMs":1773501420010}
