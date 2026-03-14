@@ -177,14 +177,12 @@ function normalizeConfig(rawConfig, configFile) {
 
   const configDir = path.dirname(configFile);
   const workspace = path.resolve(configDir, rawConfig.workspace ?? "./tmp/repos");
-  const outputFile = path.join(workspace, "result.json");
   const roles = Array.isArray(rawConfig.roles) && rawConfig.roles.length > 0
     ? rawConfig.roles
     : ["objective"];
 
   return {
     workspace,
-    outputFile,
     afterDate: rawConfig.afterDate ?? null,
     maxInputLength: rawConfig.maxInputLength ?? 10000,
     roles: roles.map((role) => {
@@ -646,15 +644,16 @@ function createErrorResult(repoConfig, error, extra = {}) {
   };
 }
 
-async function writeUserEvaluationArtifacts(repoConfig, summary, userResults, workspace, outputFile) {
-  const userCommitFile = path.join(workspace, `${repoConfig.account}.commit.json`);
-  const userResultFile = path.join(workspace, `${repoConfig.account}.json`);
+async function writeUserEvaluationArtifacts(repoConfig, summary, userResults, workspace) {
+  const output = path.join(workspace,"output");
+  const userCommitFile = path.join(output, `${repoConfig.account}.commit.json`);
+  const userResultFile = path.join(output, `${repoConfig.account}.result.json`);
   const userResultStr = JSON.stringify(userResults, null, 2);
   await writeFile(userCommitFile, `${JSON.stringify(summary, null, 2)}\n`, "utf8");
   await writeFile(userResultFile, `${userResultStr}\n`, "utf8");
 
   const resultHtmlTemplatePath = path.join(skillRoot, "assets", "user-result.html");
-  const resultHtmlOutputPath = path.join(path.dirname(outputFile), `${repoConfig.account}.result.html`);
+  const resultHtmlOutputPath = path.join(output, `${repoConfig.account}.result.html`);
   const outputFileContent = {
     generatedAt: new Date().toISOString(),
     resultCount: userResults.length,
@@ -670,7 +669,7 @@ async function writeUserEvaluationArtifacts(repoConfig, summary, userResults, wo
   await writeFile(resultHtmlOutputPath, resultHtmlContent, "utf8");
 
   console.log(`${repoConfig.account} 评估完成，结果已写入: ${userResultFile}`);
-  console.log(`HTML 报告已写入: ${resultHtmlOutputPath}`);
+  console.log(`${repoConfig.account} 评估报告已写入: ${resultHtmlOutputPath}`);
 }
 
 async function main() {
@@ -690,6 +689,11 @@ async function main() {
   const config = normalizeConfig(rawConfig, configFile);
   const prompts = await loadPrompts();
   const results = [];
+
+  const output  = path.resolve(config.workspace,"output");
+  await ensureDir(output);
+  const resultFile = path.join(output, "result.json");
+
 
   for (const repoConfig of config.repos) {
     let summary = null;
@@ -730,7 +734,7 @@ async function main() {
       console.error(`Repository prepare failed. User:${repoConfig.account} repo:${repoConfig.repoPath}`, error);
     } finally {
       results.push(userResults);
-      await writeUserEvaluationArtifacts(repoConfig, summary, userResults, config.workspace, config.outputFile);
+      await writeUserEvaluationArtifacts(repoConfig, summary, userResults, config.workspace);
     }
   }
 
@@ -742,22 +746,21 @@ async function main() {
     results
   }, null, 2).trim();
 
-  await ensureDir(path.dirname(config.outputFile));
   await writeFile(
-    config.outputFile,
+      resultFile,
     `${resultStr}\n`,
     "utf8"
   );
 
-  console.log(`评估完成，评估原始结果已写入: ${config.outputFile}`);
+  console.log(`评估完成，整体评估原始结果已写入: ${resultFile}`);
 
   const resultReportTemplatePath = path.join(skillRoot, "assets", "result.report.html");
-  const resultReportOutputPath = path.join(config.workspace, "result.report.html");
+  const resultReportOutputPath = path.join(output, "result.report.html");
   const resultReportTemplate = await readFile(resultReportTemplatePath, "utf8");
   const resultReportContent = resultReportTemplate.replace("const RAW_DATA = __RESULT_JSON_PLACEHOLDER__;", `const RAW_DATA = ${resultStr};`);
   await writeFile(resultReportOutputPath, resultReportContent, "utf8");
 
-  console.log(`评估完成，评估报告已写入: ${resultReportOutputPath}`);
+  console.log(`评估完成，整体评估报告已写入: ${resultReportOutputPath}`);
 
 }
 
