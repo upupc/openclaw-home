@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@modelcontextprotocol/inspector": "^0.21.1",
+    "@modelcontextprotocol/sdk": "^1.27.1"
+  }
+}

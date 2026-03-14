@@ -10,6 +10,20 @@
         "MINIMAX_API_HOST": "https://api.minimaxi.com",
         "MINIMAX_API_KEY": "sk-cp-U0uilfPfVmB2NW81KYroPLceCEGZ0oNQG_CzFfQ1i9Re9ikAirGV84m16WPRwi_MYlENM204NOxebGuwVW5TQoQXnmt98tuC6emMwvkg3ItY7Jr2RC0Vx6Q"
       }
+    },
+    "dingtalk": {
+      "description": "钉钉 MCP 服务器",
+      "baseUrl": "https://mcp-gw.dingtalk.com/server/b32f454f28904e0e41b0b529f8e8acc5776cf2e87b6a4b2bcaa13e64e1468583?key=27c25b5b4cfa5144648ed9a89e3b8b6e"
+    },
+    "dingtalk-docs": {
+      "description": "钉钉文档 MCP 服务器",
+      "baseUrl": "https://mcp-gw.dingtalk.com/server/b3b071e0437a627e3af01c747c5baffd21dfc4517730bdd566e61d960152e688?key=9030afc659aa58a5394937d3d417832c"
+    },
+    "dingtalk-mcp": {
+      "baseUrl": "https://mcp-gw.dingtalk.com/server/5982492c6248df8a9fa412fac7ef31be463baec1dbd0d0fcf394c9e26da5abed?key=86631c08d90351962880d3eb8139bbd0"
+    },
+    "dingtalk-contacts": {
+      "baseUrl": "https://mcp-gw.dingtalk.com/server/59629"
     }
   },
   "imports": []

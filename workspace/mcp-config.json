@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "dingtalk": {
+      "url": "https://mcp-gw.dingtalk.com/server/b3b071e0437a627e3af01c747c5baffd21dfc4517730bdd566e61d960152e688",
+      "transport": "sse",
+      "headers": {
+        "Authorization": "Bearer 9030afc659aa58a5394937d3d417832c"
+      },
+      "description": "钉钉 MCP 服务器 - 提供钉钉机器人、消息、群组等能力"
+    }
+  }
+}
