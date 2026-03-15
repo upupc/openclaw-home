@@ -8,7 +8,7 @@
       "name": "code-quality-progress-report",
       "enabled": true,
       "createdAtMs": 1773501000010,
-      "updatedAtMs": 1773501360075,
+      "updatedAtMs": 1773561780152,
       "schedule": {
         "kind": "every",
         "everyMs": 60000,
@@ -21,14 +21,13 @@
         "text": "【代码质量评估进展汇报】请检查当前 code-quality 任务执行进度并向用户汇报。"
       },
       "state": {
-        "nextRunAtMs": 1773501420010,
-        "lastRunAtMs": 1773501240014,
+        "nextRunAtMs": 1773561840058,
+        "lastRunAtMs": 1773561780058,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 120061,
+        "lastDurationMs": 94,
         "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 0,
-        "runningAtMs": 1773501420010
+        "consecutiveErrors": 0
       }
     }
   ]

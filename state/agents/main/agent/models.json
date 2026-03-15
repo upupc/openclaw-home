@@ -8,24 +8,6 @@
         {
           "id": "qwen3.5-plus",
           "name": "qwen3.5-plus (Custom Provider)",
-          "reasoning": true,
-          "input": [
-            "text",
-            "image"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0,
-            "cacheRead": 0,
-            "cacheWrite": 0
-          },
-          "contextWindow": 16000,
-          "maxTokens": 4096,
-          "api": "openai-completions"
-        },
-        {
-          "id": "glm-5",
-          "name": "glm-5",
           "reasoning": false,
           "input": [
             "text"
@@ -36,8 +18,8 @@
             "cacheRead": 0,
             "cacheWrite": 0
           },
-          "contextWindow": 202752,
-          "maxTokens": 16384,
+          "contextWindow": 16000,
+          "maxTokens": 4096,
           "api": "openai-completions"
         }
       ]

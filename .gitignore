@@ -47,6 +47,6 @@ state/agents/*/sessions
 state/logs
 state/update-check.json
 state/update-check.json.*
-
+state/extensions
 workspace/skills/aone-issue-helper
 workspace/skills/yuque-doc-fetcher
