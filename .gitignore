@@ -38,6 +38,7 @@ openclaw.json.bak*
 .credentials/
 tmp
 
+state/
 state/devices
 state/identity
 state/credentials
