@@ -6,7 +6,7 @@ OPENCLAW_HOME="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 ENV_FILE="${OPENCLAW_HOME}/.env"
 ENV_EXAMPLE_FILE="${OPENCLAW_HOME}/.env.example"
 OPENCLAW_CONFIG_FILE="${OPENCLAW_HOME}/openclaw.json"
-OPENCLAW_CONFIG_EXAMPLE_FILE="${OPENCLAW_HOME}/openclaw.json.example"
+OPENCLAW_CONFIG_EXAMPLE_FILE="${OPENCLAW_HOME}/openclaw.example.json"
 
 log() {
   printf '[install] %s\n' "$*"
@@ -260,7 +260,7 @@ ensure_openclaw_config_file() {
 
   [[ -f "${OPENCLAW_CONFIG_EXAMPLE_FILE}" ]] || fail "未找到配置模板文件: ${OPENCLAW_CONFIG_EXAMPLE_FILE}"
   cp "${OPENCLAW_CONFIG_EXAMPLE_FILE}" "${OPENCLAW_CONFIG_FILE}"
-  log "检测到 openclaw.json 不存在，已基于 openclaw.json.example 创建"
+  log "检测到 openclaw.json 不存在，已基于 openclaw.example.json 创建"
 }
 
 main() {
