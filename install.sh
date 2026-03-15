@@ -3,7 +3,8 @@
 set -euo pipefail
 
 OPENCLAW_HOME="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-ENV_FILE="${OPENCLAW_HOME}/.env"
+OPENCLAW_STATE_DIR="${OPENCLAW_HOME}/state"
+ENV_FILE="${OPENCLAW_STATE_DIR}/.env"
 ENV_EXAMPLE_FILE="${OPENCLAW_HOME}/.env.example"
 OPENCLAW_CONFIG_FILE="${OPENCLAW_HOME}/openclaw.json"
 OPENCLAW_CONFIG_EXAMPLE_FILE="${OPENCLAW_HOME}/openclaw.example.json"
@@ -18,6 +19,8 @@ fail() {
 }
 
 ensure_env_file() {
+  mkdir -p "${OPENCLAW_STATE_DIR}"
+
   if [[ -f "${ENV_FILE}" ]]; then
     :
   elif [[ -f "${ENV_EXAMPLE_FILE}" ]]; then
@@ -31,8 +34,8 @@ ensure_env_file() {
   set_env_var "PATH" "~/miniforge3/bin:\$PATH"
   set_env_var "OPENCLAW_DATA_DIR" "${OPENCLAW_HOME}/data"
   set_env_var "OPENCLAW_WORKSPACE_DIR" "${OPENCLAW_HOME}/workspace"
-  set_env_var "OPENCLAW_STATE_DIR" "${OPENCLAW_HOME}/state"
-  set_env_var "OPENCLAW_CONFIG_PATH" "${OPENCLAW_HOME}/openclaw.json"
+  set_env_var "OPENCLAW_STATE_DIR" "${OPENCLAW_STATE_DIR}"
+  set_env_var "OPENCLAW_CONFIG_PATH" "${OPENCLAW_CONFIG_FILE}"
 }
 
 set_env_var() {
@@ -215,18 +218,18 @@ update_macos_launch_agent() {
   source "${ENV_FILE}"
   set +a
 
-  while IFS= read -r line; do
-    [[ -n "${line}" ]] || continue
-    [[ "${line}" =~ ^[[:space:]]*# ]] && continue
-    [[ "${line}" == *=* ]] || continue
+  /usr/libexec/PlistBuddy -c "Delete :EnvironmentVariables:OPENCLAW_CONFIG_PATH" "${plist_file}" >/dev/null 2>&1 || true
+  /usr/libexec/PlistBuddy -c "Add :EnvironmentVariables:OPENCLAW_CONFIG_PATH string ${OPENCLAW_CONFIG_FILE}" "${plist_file}"
 
-    key="${line%%=*}"
-    value="${!key-}"
-    expanded_value="${value/#\~/${HOME}}"
+  /usr/libexec/PlistBuddy -c "Delete :EnvironmentVariables:OPENCLAW_STATE_DIR" "${plist_file}" >/dev/null 2>&1 || true
+  /usr/libexec/PlistBuddy -c "Add :EnvironmentVariables:OPENCLAW_STATE_DIR string ${OPENCLAW_STATE_DIR}" "${plist_file}"
 
-    /usr/libexec/PlistBuddy -c "Delete :EnvironmentVariables:${key}" "${plist_file}" >/dev/null 2>&1 || true
-    /usr/libexec/PlistBuddy -c "Add :EnvironmentVariables:${key} string ${expanded_value}" "${plist_file}"
-  done < "${ENV_FILE}"
+  /usr/libexec/PlistBuddy -c "Delete :StandardErrorPath" "${plist_file}" >/dev/null 2>&1 || true
+  /usr/libexec/PlistBuddy -c "Add :StandardErrorPath string ${OPENCLAW_STATE_DIR}/logs/gateway.err.log" "${plist_file}"
+
+  /usr/libexec/PlistBuddy -c "Delete :StandardOutPath" "${plist_file}" >/dev/null 2>&1 || true
+  /usr/libexec/PlistBuddy -c "Add :StandardOutPath string ${OPENCLAW_STATE_DIR}/logs/gateway.log" "${plist_file}"
+
 
   log "已更新 LaunchAgent 环境变量: ${plist_file}"
 }
