@@ -51,6 +51,7 @@ state/update-check.json.*
 state/extensions
 workspace/skills/aone-issue-helper
 workspace/skills/yuque-doc-fetcher
+workspace/cookie/
 
 .venv-scrapling/
 .claude/
