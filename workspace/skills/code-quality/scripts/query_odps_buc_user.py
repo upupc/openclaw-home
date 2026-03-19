@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 
 """
-执行固定的 MaxCompute SQL，并将结果输出为 JSON。
+执行指定的 MaxCompute SQL，并将结果输出为 JSON。
 
 用法：
-python query_odps_buc_user.py --config /path/to/code.json
+python query_odps_buc_user.py --config /path/to/code.json --sqlfile /path/to/query.sql
 """
 
 from __future__ import annotations
@@ -20,30 +20,6 @@ from typing import Any
 
 from odps import ODPS, options
 
-
-SQL_TEMPLATE = """
-SELECT
-  a1.emp_id,
-  a1.full_emp_id,
-  a1.last_name,
-  a1.nick_name_cn,
-  a1.dep_desc,
-  substring_index(a2.account,'@',1) as account,
-  a2.email,
-  a2.gmt_create
-FROM
-  icbutech.icbu_buc_user a1
-LEFT JOIN
-  onetouch.s_t_basedata_buc_user_ot_basedata a2
-ON a1.emp_id = a2.emp_id
-AND a2.ds = MAX_PT('onetouch.s_t_basedata_buc_user_ot_basedata')
-WHERE
-  a1.hr_status = 'N'
-  AND a1.emp_id IN (
-{emp_ids}
-  );
-""".strip()
-
 DEFAULT_REPO_API = "https://pre-architect.alibaba-inc.com/api/queryRecentMostCommittedRepos"
 
 
@@ -53,6 +29,7 @@ def parse_args() -> argparse.Namespace:
         allow_abbrev=False,
     )
     parser.add_argument("--config", required=True, help="JSON 配置文件路径")
+    parser.add_argument("--sqlfile", required=True, help="SQL 文件路径")
     return parser.parse_args()
 
 
@@ -81,24 +58,11 @@ def save_repos_to_config(config_path: str, config: dict[str, Any], results: list
         file.write("\n")
 
 
-def parse_emp_ids(config: dict[str, Any]) -> list[str]:
-    raw_emp_ids = config.get("empIds")
-    if not isinstance(raw_emp_ids, list):
-        raise ValueError("empIds 为必传字段，且必须是 JSON 数组")
-
-    values = [str(value).strip() for value in raw_emp_ids]
-    filtered_values = [value for value in values if value]
-    if not filtered_values:
-        raise ValueError("empIds 为必传字段，请在配置文件中传入至少一个员工 ID")
-    return filtered_values
-
-
-def build_sql(emp_ids: list[str]) -> str:
-    values = [value.strip() for value in emp_ids if value and value.strip()]
-    if not values:
-        raise ValueError("empIds 为必传字段，请在配置文件中传入至少一个员工 ID")
-    formatted_ids = ",\n".join(f"'{value}'" for value in values)
-    return SQL_TEMPLATE.format(emp_ids=formatted_ids)
+def load_sql(sqlfile_path: str) -> str:
+    path = Path(sqlfile_path).expanduser().resolve()
+    if not path.is_file():
+        raise FileNotFoundError(f"SQL 文件不存在: {path}")
+    return path.read_text(encoding="utf-8").strip()
 
 
 def get_odps_client(config: dict[str, Any]) -> ODPS:
@@ -233,8 +197,7 @@ def build_output_records(
 def main() -> int:
     args = parse_args()
     config = load_config(args.config)
-    emp_ids = parse_emp_ids(config)
-    sql = build_sql(emp_ids)
+    sql = load_sql(args.sqlfile)
     odps_client = get_odps_client(config)
     repo_api_endpoint, private_token = get_repo_api_config(config)
     odps_records = query_records(odps_client, sql)

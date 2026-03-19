@@ -4,7 +4,6 @@
 
 ```json
 {
-  "empIds": ["335554", "123456"],
   "workspace": "./tmp/repos",
   "afterDate": "2026-03-01",
   "maxInputLength": 50000,
@@ -52,7 +51,6 @@
 ```
 
 字段说明：
-- `empIds`：员工 ID 列表
 - `workspace`：本地仓库目录，不存在会自动创建，评估结果固定输出到 `<workspace>/result.json`
 - `afterDate`：提交开始日期，格式为 `YYYY-MM-DD`
 - `maxInputLength`：单维度送入模型的最大字符数，默认 `10000`
@@ -73,7 +71,7 @@
 
 结果文件结构与原处理器保持同类语义，但输出介质改为 JSON 文件，不再写入 ODPS。
 
-执行 `query_odps_buc_user.py` 时，脚本会从配置文件的 `empIds` 读取员工 ID，先查询员工信息，再调用代码库接口补齐 `repoPath`，最终输出如下结构的 JSON 数组：
+执行 `query_odps_buc_user.py` 时，脚本会直接读取 `--sqlfile` 指定的 SQL 文件并执行，再调用代码库接口补齐 `repoPath`，最终输出如下结构的 JSON 数组。SQL 查询结果至少需要包含 `emp_id` 与 `account` 字段，其他字段会按原样读取并映射：
 
 ```json
 [
@@ -92,5 +90,5 @@
 执行命令示例：
 
 ```bash
-python3 scripts/query_odps_buc_user.py --config /path/to/code.json
+python3 scripts/query_odps_buc_user.py --config /path/to/code.json --sqlfile scripts/query_odps_buc_user.sql
 ```

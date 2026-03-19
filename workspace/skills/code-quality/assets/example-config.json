@@ -1,5 +1,4 @@
 {
-  "empIds": ["xxxx"],
   "workspace": "./tmp/repos",
   "afterDate": "2026-03-01",
   "maxInputLength": 50000,
